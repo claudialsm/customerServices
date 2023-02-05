@@ -11,6 +11,7 @@
 	<groupId>com.check</groupId>
 	<artifactId>customerservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+<<<<<<< HEAD
 	<name>customerservices</name>
 	<description>Build customer microservice</description>
 	<properties>
@@ -20,6 +21,41 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+=======
+	<packaging>pom</packaging>
+	<name>customerservices</name>
+<!--	<url>https://www.customerservices.com</url>-->
+	<description>Check whether customer is fraudulent</description>
+	<modules>
+		<module>customers</module>
+	</modules>
+	<properties>
+		<java.version>17</java.version>
+		<project.build.sourceEconding>UTF-8</project.build.sourceEconding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<spring.boot.maven.plugin.version>2.5.7</spring.boot.maven.plugin.version>
+		<spring.boot.dependencies.version>2.5.7</spring.boot.dependencies.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>2.5.7</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+>>>>>>> bcf158ba5f93a71200513e2e4756fbd129d93294
 		</dependency>
 
 		<dependency>
@@ -27,11 +63,14 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+=======
+>>>>>>> bcf158ba5f93a71200513e2e4756fbd129d93294
 	</dependencies>
 
 	<build>
@@ -48,6 +87,18 @@
 					</excludes>
 				</configuration>
 			</plugin>
+<<<<<<< HEAD
+=======
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>17</release>  <!--or <release>10</release>-->
+				</configuration>
+			</plugin>
+>>>>>>> bcf158ba5f93a71200513e2e4756fbd129d93294
 		</plugins>
 	</build>
 
